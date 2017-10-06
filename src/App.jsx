@@ -8,7 +8,7 @@ const counterDefaultVal = {
     title: "Speed",
     unit: "mph",
     min: 45,
-    max: 75,
+    max: 70,
     step: 5,
   },
   temperature: {
