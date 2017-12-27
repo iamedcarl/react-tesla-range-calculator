@@ -12,12 +12,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    increment:(value) => {
-      dispatch(temperatureUp(value));
-    },
-    decrement:(value) => {
-      dispatch(temperatureDown(value));
-    }
+    increment:(value) => dispatch(temperatureUp(value)),
+    decrement:(value) => dispatch(temperatureDown(value)),
   };
 };
 

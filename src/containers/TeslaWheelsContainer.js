@@ -10,9 +10,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    changeHandler:(size) => {
-      dispatch(changeWheel(size));
-    }
+    handleChangeWheels:(size) => dispatch(changeWheel(size)),
   };
 };
 

@@ -6,7 +6,7 @@ const LabelLists = (props) => {
   const value = props.wheels.value;
   const changeHandler = props.wheels.handleChangeWheels;
   const sizes = [19, 21];
-  
+
   const LabelItems = sizes.map(size => {
     const wheelsItem = value === size ? 'tesla-wheels-item--active' : '';
     return(
@@ -16,7 +16,7 @@ const LabelLists = (props) => {
           name="wheelsize"
           value={size}
           checked={value === size}
-          onChange={() => {changeHandler(size);}}
+          onChange={() => changeHandler(size)}
         />
         <p>{size}</p>
       </label>
